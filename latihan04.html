@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lt jvs 04</title>
+</head>
+<body>
+   <input type="text" id="txtampil">
+   <br>
+   <button onclick="hapus()">C</button> <br>
+   <button>7</button><button>8</button><button>9</button><button>+</button><br>
+   <button4</button><button>5</button><button>6</button><button>-</button><br>
+   <button onclick="disp(1)">1</button><button>2</button><button>3</button><button>x</button><br>
+   <button onclick="disp(0)">0</button><button>.</button><button>=</button><button>/</button><br>
+
+   <script>
+       function disp(angka){
+        let dta = document.getElementById("txtampil").value;
+        angka = dta + angka
+       document.getElementById("txtampil").value=angka
+       }
+       function hapus(){
+           document.getElementById("txtampil").value=""
+       }
+   </script>
+</body>
+</html>
